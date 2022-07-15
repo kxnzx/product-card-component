@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+main {
+  position: relative;
+}
+
+section {
+  max-width: 21.375rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  section {
+    display: grid;
+    max-width: 37.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.hero_mobile {
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+@media only screen and (min-width: 1024px) {
+  .hero_mobile {
+    display: none;
+  }
+}
+
+.hero_desktop {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .hero_desktop {
+    display: block;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+  }
+}
+
+.description {
+  padding: 1.563rem;
+}
+@media only screen and (min-width: 1024px) {
+  .description {
+    padding: 2.188rem 1.875rem 1.875rem 1.875rem;
+  }
+}
+
+h2,
+.text,
+footer {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+}
+
+h2 {
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.563rem;
+}
+@media only screen and (min-width: 1024px) {
+  h2 {
+    margin-bottom: 1.25rem;
+  }
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  color: hsl(212deg, 21%, 14%);
+  font-size: 1.875rem;
+  line-height: 1;
+  margin-bottom: 0.938rem;
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+.text {
+  margin-bottom: 3.438rem;
+  font-size: 0.813rem;
+  line-height: 1.8;
+}
+@media only screen and (min-width: 1024px) {
+  .text {
+    font-size: 0.938rem;
+    margin-bottom: 2.188rem;
+  }
+}
+
+.price {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158deg, 36%, 37%);
+  font-size: 1.875rem;
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.price s {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  align-self: center;
+}
+@media only screen and (min-width: 1024px) {
+  .price {
+    margin-bottom: 1.875rem;
+  }
+}
+
+button {
+  background-color: hsl(158deg, 36%, 37%);
+  border: none;
+  max-width: 18.438rem;
+  width: 100%;
+  padding: 0.938rem 0;
+  border-radius: 10px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.063rem;
+  cursor: pointer;
+}
+button::before {
+  content: url(../images/icon-cart.svg);
+  margin-right: 0.625rem;
+  vertical-align: middle;
+}
+button:hover {
+  background-color: #244c3d;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer a {
+  color: hsl(158deg, 36%, 37%);
+}/*# sourceMappingURL=style.css.map */
